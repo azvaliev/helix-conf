@@ -1,0 +1,11 @@
+runtime/grammars
+runtime/tutor
+runtime/queries
+runtime/themes/*
+
+!.gitignore
+!config.toml
+!runtime/themes/nord-dark.toml
+!runtime/themes/edge_aura.toml
+!runtime/themes/edge_default.toml
+!runtime/themes/edge_neon.tom
