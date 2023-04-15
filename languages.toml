@@ -1,0 +1,49 @@
+[[language]]
+name = "typescript"
+language-servers = [{ name = "typescript-language-server" }, "eslint"]
+
+[[language]]
+name = "javascript"
+language-servers = [{ name = "typescript-language-server" }, "eslint"]
+
+[[language]]
+name = "jsx"
+language-servers = [{ name = "typescript-language-server" }, "eslint"]
+
+[[language]]
+name = "tsx"
+language-servers = [{ name = "typescript-language-server" }, "eslint"]
+
+[language-server.eslint]
+args = ["--stdio"]
+command = "vscode-eslint-language-server"
+
+[language-server.eslint.config]
+format = true
+nodePath = ""
+onIgnoredFiles = "off"
+packageManager = "yarn"
+quiet = false
+rulesCustomizations = []
+run = "onType"
+useESLintClass = false
+validate = "on"
+
+[language-server.eslint.config.codeAction]
+[language-server.eslint.config.codeAction.disableRuleComment]
+enable = true
+location = "separateLine"
+
+[language-server.eslint.config.codeAction.showDocumentation]
+enable = true
+
+[language-server.eslint.config.codeActionOnSave]
+mode = "all"
+
+[language-server.eslint.config.experimental]
+
+[language-server.eslint.config.problems]
+shortenToSingleLine = false
+
+[language-server.eslint.config.workingDirectories]
+mode = "auto"
