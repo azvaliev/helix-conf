@@ -14,6 +14,10 @@ language-servers = [{ name = "typescript-language-server" }, "eslint"]
 name = "tsx"
 language-servers = [{ name = "typescript-language-server" }, "eslint"]
 
+[[language]]
+name = "rust"
+auto-format = false
+
 [language-server.eslint]
 args = ["--stdio"]
 command = "vscode-eslint-language-server"
