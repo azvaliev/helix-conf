@@ -1,5 +1,11 @@
 # Requirements
 
+## Multiple LSP & File Explorer
+
+I am using a custom fork of the `helix` editor to add these features.
+You can find it [here](https://github.com/azvaliev/helix) and follow the building from source
+instruction on the official [documentation](https://docs.helix-editor.com/install.html#building-from-source)
+
 ## TypeScript w/ ESLint 
 
 - [VSCode language servers extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
