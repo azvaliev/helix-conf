@@ -3,6 +3,10 @@ theme = "nord-dark"
 [editor]
 line-number = "relative"
 bufferline = "multiple"
+cursorline = true
+
+[editor.statusline]
+right = ["diagnostics", "selections", "version-control", "position", "file-encoding"]
 
 [editor.cursor-shape]
 insert = "bar"
