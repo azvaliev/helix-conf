@@ -6,6 +6,7 @@
 1. Clone this into your `~/.config/helix` folder.
 1. `hx --grammar fetch` + `hx --grammar build` to get all the nice autocomplete stuff
 1. For the file manager, see below for the `lf-pick` setup
+1. Check `hx --health` to make sure you have the LSP's you need installed
 1. Profit?!!
 
 ## `lf-pick` helix file manager
@@ -28,3 +29,27 @@ lfp
 ```
 
 Now you can use `-` when in normal mode in your editor 
+
+## TypeScript w/ ESLint 
+
+Need to install:
+- [VSCode language servers extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
+- [TypeScript Language Servers](https://github.com/typescript-language-server/typescript-language-server)
+
+### Cannot find tsconfig error
+
+For me, my ESLint was having a rough time finding the `tsconfig.json`, and would often start looking in my src folder
+It turns out there is one simple line which can help eslint know where to look for your `tsconfig.json`
+
+```javascript
+module.exports = {
+  // ...
+  parserOptions: {
+    project: "./tsconfig.json",
+    tsconfigRootDir: __dirname,
+  }
+}
+```
+
+The `tsconfigRootDir` option will tell ESLint to look for `tsconfig.json` relative to your `.eslintrc.js`.
+
