@@ -9,32 +9,11 @@
 1. Check `hx --health` to make sure you have the LSP's you need installed
 1. Profit?!!
 
-## `lf-pick` helix file manager
-
-Requires [lf](https://github.com/gokcehan/lf?tab=readme-ov-file#installation)
-
-Drop this file somewhere which your PATH will pick up, name it `lf-pick` and make sure it's executable `chmod +x lf-pick`
-```bash
-function lfp(){
-  local TEMP=$(mktemp)
-  lf -selection-path=$TEMP
-  echo >> $TEMP
-  while read -r line
-  do
-    echo "$line"
-  done < "$TEMP"
-}
-
-lfp
-```
-
-Now you can use `-` when in normal mode in your editor 
-
 ## TypeScript w/ ESLint 
 
 Need to install:
 - [VSCode language servers extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
-- [TypeScript Language Servers](https://github.com/typescript-language-server/typescript-language-server)
+- [VTSLS](https://github.com/yioneko/vtsls)
 
 ### Cannot find tsconfig error
 
