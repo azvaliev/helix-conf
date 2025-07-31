@@ -12,8 +12,8 @@ display-inlay-hints = true
 minus = "file_explorer_in_current_buffer_directory"
 
 # Quick iteration on config changes
-C-o = ":config-open"
-C-r = ":config-reload"
+# C-o = ":config-open"
+# C-r = ":config-reload"
 
 # Some nice Helix stuff
 C-h = "select_prev_sibling"
