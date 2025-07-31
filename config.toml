@@ -1,5 +1,8 @@
 theme = "rasmus"
 
+[editor]
+bufferline = "always"
+
 [editor.file-picker]
 hidden = false
 
@@ -92,7 +95,15 @@ up = ["select_mode", "extend_to_line_bounds", "extend_line_above", "yank_main_se
 G = ["select_mode", "extend_to_line_bounds", "goto_last_line", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"]
 w = ["move_next_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
 W = ["move_next_long_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
-g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"] }
+
+[keys.normal.space.t]
+n = [":new"]
+o = [":buffer-close-others"]
+c = [":buffer-close"]
+
+[keys.normal.g]
+g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"]
+t = ["goto_next_buffer"]
 
 # gcc to comment out
 [keys.normal.g.c]
