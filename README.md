@@ -12,7 +12,8 @@
 ## TypeScript w/ ESLint 
 
 Need to install:
-- [VSCode language servers extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
+- [VSCode language servers extracted](https://github.com/hrsh7th/vscode-langservers-extracted).  
+    IMPORTANT: use version 4.8.0, newer version seems to break
 - [VTSLS](https://github.com/yioneko/vtsls)
 
 ### Cannot find tsconfig error
